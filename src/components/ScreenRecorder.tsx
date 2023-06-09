@@ -66,8 +66,6 @@ export default function ScreenRecorder() {
     const sliceChunks =
       chunks && chunks.length > 300 ? chunks?.slice(-300) : chunks;
     const blob = new Blob(sliceChunks, { type: "video/webm" });
-    console.log(chunks, "chunks");
-    console.log(sliceChunks, "sliceChunks");
     chunks = [];
     const zip = new JSZip();
     console.log("work");
@@ -90,6 +88,7 @@ export default function ScreenRecorder() {
           color: "white",
           borderRadius: "5px",
           borderColor: "darkgray",
+          height: "35px",
         }}
       >
         Start recording
@@ -103,6 +102,7 @@ export default function ScreenRecorder() {
           color: "white",
           borderRadius: "5px",
           borderColor: "darkgray",
+          height: "35px",
         }}
       >
         Stop recording

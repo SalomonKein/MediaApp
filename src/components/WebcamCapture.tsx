@@ -49,6 +49,7 @@ export default function WebcamCapture() {
           borderRadius: "5px",
           borderColor: "darkgray",
           color: `${isShowVideo ? "white" : "black"}`,
+          height: "35px",
         }}
         onClick={isShowVideo ? stopCam : startCam}
       >
