@@ -2160,6 +2160,11 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
+"@types/recordrtc@^5.6.11":
+  version "5.6.11"
+  resolved "https://registry.yarnpkg.com/@types/recordrtc/-/recordrtc-5.6.11.tgz#1eb126ebfa46ef79bfb4470f6a52ec717610936e"
+  integrity sha512-X4XD5nltz0cjmyzsPNegQReOPF+C5ARTfSPAPhqnKV7SsfRta/M4FBJ5AtSInCaEveL71FLLSVQE9mg8Uuo++w==
+
 "@types/resolve@1.17.1":
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-1.17.1.tgz#3afd6ad8967c77e4376c598a82ddd58f46ec45d6"
@@ -7976,6 +7981,11 @@ recorder-audio-worklet@^5.1.26:
     subscribable-things "^2.1.14"
     tslib "^2.5.0"
     worker-factory "^6.0.76"
+
+recordrtc@^5.6.2:
+  version "5.6.2"
+  resolved "https://registry.yarnpkg.com/recordrtc/-/recordrtc-5.6.2.tgz#48fc214b35084973ccce82c6251198b5742bc327"
+  integrity sha512-1QNKKNtl7+KcwD1lyOgP3ZlbiJ1d0HtXnypUy7yq49xEERxk31PHvE9RCciDrulPCY7WJ+oz0R9hpNxgsIurGQ==
 
 recursive-readdir@^2.2.2:
   version "2.2.3"

@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./App.css";
+import RecordCrop from "./components/RecordCrop";
 import ScreenRecorder from "./components/ScreenRecorder";
 import WebcamCapture from "./components/WebcamCapture";
 
@@ -8,6 +9,10 @@ const videoFile = require("./assets/zhil-byl-pes.mp4");
 function App() {
   const videoPlayerRef = useRef<HTMLDivElement>(null);
 
+ useEffect(()=>{
+  const pos =  videoPlayerRef.current?.getBoundingClientRect()
+  console.log(pos)
+},[])
   return (
     <div className="App">
       <div
@@ -23,6 +28,7 @@ function App() {
         <WebcamCapture />
       </div>
       <ScreenRecorder />
+      <RecordCrop/>
     </div>
   );
 }
